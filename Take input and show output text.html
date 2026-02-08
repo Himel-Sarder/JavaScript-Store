@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Input</title>
+</head>
+<body>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button onclick="showName()">Show Name</button>
+
+  <p id="result"></p>
+
+  <script>
+    function showName() {
+      const name = document.getElementById("name").value;
+      document.getElementById("result").innerHTML = "Hello, " + name;
+    }
+  </script>
+</body>
+</html>
